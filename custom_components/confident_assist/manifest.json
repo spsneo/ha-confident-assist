@@ -1,9 +1,16 @@
 {
   "domain": "confident_assist",
   "name": "Confident Assist",
-  "codeowners": ["@spsneo"],
+  "categories": [
+    "ai_voice.voice_assistants"
+  ],
+  "codeowners": [
+    "@spsneo"
+  ],
   "config_flow": true,
-  "dependencies": ["conversation"],
+  "dependencies": [
+    "conversation"
+  ],
   "documentation": "https://github.com/spsneo/ha-confident-assist",
   "integration_type": "service",
   "iot_class": "cloud_polling",
