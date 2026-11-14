@@ -1,0 +1,13 @@
+{
+  "domain": "confident_assist",
+  "name": "Confident Assist",
+  "codeowners": ["@spsneo"],
+  "config_flow": true,
+  "dependencies": ["conversation"],
+  "documentation": "https://github.com/spsneo/ha-confident-assist",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/spsneo/ha-confident-assist/issues",
+  "requirements": [],
+  "version": "0.0.1"
+}

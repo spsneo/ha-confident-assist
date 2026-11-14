@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Fallback",
+        "description": "Pick where a sentence goes when Confident Assist is not sure what it means.",
+        "data": {
+          "fallback_provider": "Fallback provider"
+        }
+      },
+      "fallback": {
+        "title": "Fallback agent",
+        "description": "Pick the conversation agent that gets a sentence when Confident Assist is not sure. Leave it empty to answer that it did not understand.",
+        "data": {
+          "fallback_agent": "Fallback agent"
+        },
+        "data_description": {
+          "fallback_agent": "Any conversation agent, for example an LLM. It cannot be a Confident Assist agent."
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Fallback",
+        "description": "Pick where a sentence goes when Confident Assist is not sure what it means.",
+        "data": {
+          "fallback_provider": "Fallback provider"
+        }
+      },
+      "fallback": {
+        "title": "Fallback agent",
+        "description": "Pick the conversation agent that gets a sentence when Confident Assist is not sure. Leave it empty to answer that it did not understand.",
+        "data": {
+          "fallback_agent": "Fallback agent"
+        },
+        "data_description": {
+          "fallback_agent": "Any conversation agent, for example an LLM. It cannot be a Confident Assist agent."
+        }
+      }
+    }
+  },
+  "selector": {
+    "fallback_provider": {
+      "options": {
+        "ha_agent": "A Home Assistant conversation agent"
+      }
+    }
+  },
+  "common": {
+    "not_understood": "Sorry, I did not understand that."
+  }
+}

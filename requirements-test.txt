@@ -1,0 +1,12 @@
+# The test harness pins Home Assistant itself. Raise it together with the
+# minimum version in hacs.json, and keep the pins below in step with it.
+pytest-homeassistant==2026.11.1
+pytest-cov==7.0.0
+
+# The conversation component's own requirements, exactly as
+# homeassistant/components/conversation/manifest.json pins them for 2026.11.1.
+# Home Assistant installs these for a user; a test environment gets nothing
+# unless it is asked, and the failure is an ImportError at collection.
+gazetteer-matcher==1.1.0
+hassil==3.12.1
+home-assistant-intents==2026.10.27
