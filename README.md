@@ -10,3 +10,7 @@ Decision APIs and fallback agents are providers, so new ones are easy to add.
 Status: in development. Not ready to install yet.
 
 Requires Home Assistant 2026.11 or newer.
+
+## Development
+
+See [CLAUDE.md](CLAUDE.md) for the rules and the checks to run.

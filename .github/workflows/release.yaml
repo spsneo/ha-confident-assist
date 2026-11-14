@@ -1,0 +1,25 @@
+name: Release
+
+# A published GitHub release must carry the same version as manifest.json, or
+# HACS and the Marketplace show one version and install another.
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: The tag matches manifest.json
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          manifest="$(jq -r .version custom_components/confident_assist/manifest.json)"
+          if [ "$tag" != "$manifest" ]; then
+            echo "Release tag $tag does not match manifest version $manifest"
+            exit 1
+          fi
